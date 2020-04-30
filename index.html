@@ -8,6 +8,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="login">
+        <div class="container">
+            <h1>Payoneer Bank</h1>
+            <div class="user-input">
+                <h5>Email</h5>
+                <input type="text" id="email" class="form-control" placeholder="Enter your email"><br>
+                <h5>Password</h5>
+                <input type="password" id="password" class="form-control" placeholder="Enter password"><br>
+                <button class="btn btn-success" id="btn-login">LOGIN</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="transaction">
+        <div class="container">
+            <div class="data">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="depositAmount">
+                            <h4>Deposit</h4>
+                            <h2>$<span id="currentDeposit">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="withdrawAmount">
+                            <h4>Withdraw</h4>
+                            <h2>$<span id="currentWithdraw">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="balance">
+                            <h4>Balance</h4>
+                            <h2>$<span id="currentBalance">00</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+            <div class="row">
+                <div class="input-amount col-md-6">
+                    <h4></h4>
+                    <input type="number" class="form-control" placeholder="Enter deposit amount" id="deposit">
+                    <button class="btn btn-primary text-white my-3" id="btn-deposit">DEPOSIT</button>
+                </div>
+                
+                <div class="input-amount col-md-6">
+                    <h4></h4>
+                    <input type="number" class="form-control" placeholder="Enter withdraw amount" id="withdraw">
+                    <button class="btn btn-primary text-white my-3" >WITHDRAW</button>
+                
+                </div>
+            </div>
+        </div>
+    </section>
     
 
     <script src="main.js"></script>
